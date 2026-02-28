@@ -18,7 +18,6 @@ export const day1Schedule: ScheduleItem[] = [
     title: "上尾を出発",
     category: "出発",
     memo: "車2台で移動。途中SAで休憩を挟む。",
-    mapQuery: "上尾市",
     travelInfo: {
       method: "車",
       duration: "約1時間30分",
@@ -30,7 +29,7 @@ export const day1Schedule: ScheduleItem[] = [
     title: "水沢うどん 釜吉",
     category: "昼食",
     memo: "人気店のため早めに到着。",
-    mapQuery: "水沢うどん 釜吉 渋川市",
+    mapQuery: "群馬県吾妻郡草津町草津469-6",
     officialUrl: "https://tabelog.com/gunma/A1004/A100402/10024874/",
     travelInfo: {
       method: "車",
@@ -43,7 +42,7 @@ export const day1Schedule: ScheduleItem[] = [
     title: "伊香保 石段街",
     category: "観光",
     memo: "365段の石段の両脇にお土産屋さんや射的、温泉まんじゅうなどの食べ歩きが楽しめます。石段の頂上には伊香保神社があり、さらに奥には河鹿橋や朱色の美しい渓谷も。夜はおいしい夕食が待っているので、食べ歩きはほどほどに！",
-    mapQuery: "伊香保 石段街",
+    mapQuery: "伊香保温泉石段街 〒377-0102 群馬県渋川市伊香保町伊香保76-5",
     officialUrl: "https://www.jalan.net/news/article/838236/",
     travelInfo: {
       method: "車",
@@ -99,7 +98,6 @@ export const day2Schedule: ScheduleItem[] = [
     title: "帰路へ",
     category: "出発",
     memo: "渋川伊香保ICから関越道へ。",
-    mapQuery: "渋川伊香保IC",
     travelInfo: {
       method: "車（高速）",
       duration: "約1時間30分",
@@ -110,7 +108,6 @@ export const day2Schedule: ScheduleItem[] = [
     time: "16:00",
     title: "上尾に到着・解散",
     category: "到着",
-    mapQuery: "上尾市",
   },
 ]
 
