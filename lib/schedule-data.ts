@@ -14,7 +14,7 @@ export type ScheduleItem = {
 
 export const day1Schedule: ScheduleItem[] = [
   {
-    time: "09:30",
+    time: "10:00",
     title: "上尾を出発",
     category: "出発",
     memo: "車2台で移動。途中SAで休憩を挟む。",
@@ -26,7 +26,7 @@ export const day1Schedule: ScheduleItem[] = [
     },
   },
   {
-    time: "11:30",
+    time: "12:00",
     title: "水沢うどん 釜吉",
     category: "昼食",
     memo: "人気店のため早めに到着。",
@@ -39,7 +39,7 @@ export const day1Schedule: ScheduleItem[] = [
     },
   },
   {
-    time: "13:30",
+    time: "14:00",
     title: "伊香保 石段街",
     category: "観光",
     memo: "365段の石段の両脇にお土産屋さんや射的、温泉まんじゅうなどの食べ歩きが楽しめます。石段の頂上には伊香保神社があり、さらに奥には河鹿橋や朱色の美しい渓谷も。夜はおいしい夕食が待っているので、食べ歩きはほどほどに！",
@@ -52,7 +52,7 @@ export const day1Schedule: ScheduleItem[] = [
     },
   },
   {
-    time: "15:00",
+    time: "15:30",
     title: "古久家（チェックイン）",
     category: "宿泊",
     mapQuery: "伊香保温泉 古久家旅館",
