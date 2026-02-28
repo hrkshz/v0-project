@@ -5,6 +5,11 @@ export type ScheduleItem = {
   memo?: string
   mapQuery?: string
   officialUrl?: string
+  travelInfo?: {
+    method: string
+    duration: string
+    detail?: string
+  }
 }
 
 export const day1Schedule: ScheduleItem[] = [
@@ -14,6 +19,11 @@ export const day1Schedule: ScheduleItem[] = [
     category: "出発",
     memo: "車2台で移動。途中SAで休憩を挟む。",
     mapQuery: "上尾市",
+    travelInfo: {
+      method: "車",
+      duration: "約1時間30分",
+      detail: "関越自動車道 → 渋川伊香保IC → 水沢方面へ",
+    },
   },
   {
     time: "11:30",
@@ -22,14 +32,24 @@ export const day1Schedule: ScheduleItem[] = [
     memo: "人気店のため早めに到着。",
     mapQuery: "水沢うどん 釜吉 渋川市",
     officialUrl: "https://tabelog.com/gunma/A1004/A100402/10024874/",
+    travelInfo: {
+      method: "車",
+      duration: "約15分",
+      detail: "水沢エリアから石段街方面へ下る",
+    },
   },
   {
     time: "13:30",
     title: "伊香保 石段街",
     category: "観光",
-    memo: "高低差あり。88歳のおじいちゃん/おばあちゃんは上の神社付近まで車で移動推奨。子供たちは下から散策。",
+    memo: "365段の石段の両脇にお土産屋さんや射的、温泉まんじゅうなどの食べ歩きが楽しめます。石段の頂上には伊香保神社があり、さらに奥には河鹿橋や朱色の美しい渓谷も。夜はおいしい夕食が待っているので、食べ歩きはほどほどに！",
     mapQuery: "伊香保 石段街",
     officialUrl: "https://www.jalan.net/news/article/838236/",
+    travelInfo: {
+      method: "車",
+      duration: "約5分",
+      detail: "石段街から旅館までは近距離",
+    },
   },
   {
     time: "15:00",
@@ -55,14 +75,24 @@ export const day2Schedule: ScheduleItem[] = [
     time: "10:00",
     title: "チェックアウト",
     category: "出発",
+    travelInfo: {
+      method: "車",
+      duration: "約5分",
+      detail: "旅館からグリーン牧場はすぐ近く",
+    },
   },
   {
     time: "10:15",
     title: "伊香保グリーン牧場",
     category: "観光",
-    memo: "10歳の子供たちが全力で遊べるスポット！シープドッグショーなどを楽しむ。",
+    memo: "広大な牧場で動物たちとふれあえるスポット。シープドッグショーや馬・うさぎ・ヤギとのふれあい体験、バター作り体験なども楽しめます。BBQハウスでランチも可能。春は牧場内に咲く桜も見どころです。",
     mapQuery: "伊香保グリーン牧場",
     officialUrl: "https://www.greenbokujo.jp/",
+    travelInfo: {
+      method: "車",
+      duration: "約10分",
+      detail: "牧場を出て渋川伊香保ICへ",
+    },
   },
   {
     time: "14:00",
@@ -70,6 +100,11 @@ export const day2Schedule: ScheduleItem[] = [
     category: "出発",
     memo: "渋川伊香保ICから関越道へ。",
     mapQuery: "渋川伊香保IC",
+    travelInfo: {
+      method: "車（高速）",
+      duration: "約1時間30分",
+      detail: "関越自動車道 → 上尾方面へ",
+    },
   },
   {
     time: "16:00",

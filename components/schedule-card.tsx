@@ -8,6 +8,9 @@ import {
   MapPin,
   Globe,
   Info,
+  ArrowDown,
+  Clock,
+  Route,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -164,6 +167,26 @@ export function ScheduleCard({ item, isLast }: ScheduleCardProps) {
             </div>
           )}
         </div>
+
+        {/* Travel Info to next stop */}
+        {item.travelInfo && !isLast && (
+          <div className="mt-4 mb-1 flex items-center gap-2.5 rounded-lg border border-dashed border-primary/25 bg-primary/5 px-3 py-2.5">
+            <div className="flex items-center gap-1.5 text-primary">
+              <Car className="size-4" />
+              <span className="text-sm font-semibold">{item.travelInfo.method}</span>
+            </div>
+            <div className="flex items-center gap-1 text-muted-foreground">
+              <Clock className="size-3.5" />
+              <span className="text-sm font-medium">{item.travelInfo.duration}</span>
+            </div>
+            {item.travelInfo.detail && (
+              <>
+                <span className="text-muted-foreground/40">|</span>
+                <span className="text-xs text-muted-foreground">{item.travelInfo.detail}</span>
+              </>
+            )}
+          </div>
+        )}
       </div>
     </div>
   )
